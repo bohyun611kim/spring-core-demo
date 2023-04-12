@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="spring-chad-aop:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/spring_chad_aop_jar</output-path>
+    <root id="archive" name="spring-chad-aop.jar">
+      <element id="module-output" name="spring-chad-aop" />
+      <element id="javaee-facet-resources" facet="spring-chad-aop/web/Web" />
+      <element id="javaee-facet-resources" facet="spring-chad-aop/javaeeApplication/javaEEApplication" />
+      <element id="jpa-descriptors" facet="spring-chad-aop/jpa/JPA" />
+    </root>
+  </artifact>
+</component>

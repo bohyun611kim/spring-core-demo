@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:context="http://www.springframework.org/schema/context"
+  xmlns:mvc="http://www.springframework.org/schema/mvc"
+  xmlns:aop="http://www.springframework.org/schema/aop"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
+		http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+
+
+
+  <!-- Controller 를 찾을 Base Package 명 -->
+  <context:component-scan base-package="com.luv2code.aopdemo"/>
+  <context:annotation-config/>
+  <mvc:annotation-driven/>
+  <aop:aspectj-autoproxy/>
+
+
+
+  <!-- Spring MVC ViewResolver -->
+  <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+    <property name="prefix" value="/WEB-INF/views/"/>
+    <property name="suffix" value=".jsp"/>
+  </bean>
+
+  <bean id="jsonView" class="org.springframework.web.servlet.view.json.MappingJackson2JsonView">
+    <property name="contentType" value="application/json;charset=UTF-8"/>
+  </bean>
+  <!-- Spring MVC ViewResolver -->
+
+
+  <!-- Spring 환경 설정  Loading -->
+
+
+  <!-- spring security settings -->
+
+  <!-- spring security settings -->
+
+
+</beans>
